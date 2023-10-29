@@ -31,7 +31,7 @@ Item_Outlet_Sales           | Sales of the product in the particular store. This
 
 
 ## Exploratery Data Analysis
-1. First of all, we will use a custom function called explore(dataframe,data_dictionary) that will:
+1    First of all, we will use a custom function called explore(dataframe,data_dictionary) that will:
     - extract the features' datatypes from the data dictionary and address every data type within our dataset. Using a Try and Except, the       function will address every feature's datatype and throws a warning message if the column did not change its type successfully,
     - diplay a missingso graph to evalute missing values,
     - display a numerical desciption for each feature (min, max, mean, 25% quantile, 75% Quantile, standard deviation and the count). We         will use these ao assess any inconsistency within our numerical features,
