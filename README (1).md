@@ -42,7 +42,7 @@ Item_Outlet_Sales           | Sales of the product in the particular store. This
         - The unique values within each categorical feature, the count of each unique value and its percentgae to check the feature's                consistancy.
         - the most common value and its number of occurences as well as a warning message if the corresponding feature is constant or                quasi-constant (>=98% of occurences for the most common value),
    
-2- Results :
+-    Results :
 -    All features changed their types succefully,
 -    There are no duplicated rows,
 -    There is no inconsistencey within the numerical features,
