@@ -9,9 +9,11 @@ The goal of this project is to help the retailor understand the properties of pr
 
 
 ### Data:
-[Data Source](https://drive.google.com/file/d/1pjfwuYRLDsei9Z8gYFtHhi-pEKxp8DAA/view?usp=sharing)
+[Data Source](https://drive.google.com/file/d/1pjfwuYRLDsei9Z8gYFtHhi-pEKxp8DAA/view)
 
-Data can include source and high-level description (e.g. # obs)
+For this dataset there are 8523 rows and 12 columns.
+### Data Dictionary:
+
 
 
 ## Methods
