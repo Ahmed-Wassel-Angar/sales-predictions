@@ -31,7 +31,7 @@ Item_Outlet_Sales           | Sales of the product in the particular store. This
 
 
 ## Exploratery Data Analysis
-1-First of all, we will use a custom function called explore(dataframe,data_dictionary) that will:
+1.    First of all, we will use a custom function called explore(dataframe,data_dictionary) that will:
     - extract the features' datatypes from the data dictionary and address every data type within our dataset. Using a Try and Except, the       function will address every feature's datatype and throws a warning message if the column did not change its type successfully,
     - Check for duplicated row and drop them if found. A message with the number of deleted rows will be displayed for the user.
     - diplay a missingso graph to evalute missing values,
