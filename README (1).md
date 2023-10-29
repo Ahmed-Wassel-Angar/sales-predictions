@@ -1,7 +1,7 @@
-# Title that recommends an action
+# sales prediction for food items sold at various stores
 ## Subtitle describing the analysis 
 
-**Author**: 
+**Author**: Ahmed Wassel Angar 
 
 ### Business problem:
 
