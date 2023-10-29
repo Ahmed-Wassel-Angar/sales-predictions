@@ -43,12 +43,12 @@ Item_Outlet_Sales           | Sales of the product in the particular store. This
         - the most common value and its number of occurences as well as a warning message if the corresponding feature is constant or                quasi-constant (>=98% of occurences for the most common value),
    
 -    Results :
--    All features changed their types succefully,
--    There are no duplicated rows,
--    There is no inconsistencey within the numerical features,
--    Two features have missing values, which are "Item_Weight" and "Outlet_Size":
-    - Part of the outlets with missing size corressponds to the grocery stores. Hence, we will suppose that all grocery stores are small         sized.
-    - The remaining outlets with missing size corresspond are OUT007 and OUT045. Both of them are Supermarkets of Type 1 located in Tier2. The only outlet with same characteristics is OUT035, which is a small sized outlet and have a greater average sales than the             former two. Hence, we will assume that OUT007 and OUT045 are small sized.   
+    -    All features changed their types succefully,
+    -    There are no duplicated rows,
+    -    There is no inconsistencey within the numerical features,
+    -    Two features have missing values, which are "Item_Weight" and "Outlet_Size":
+        - Part of the outlets with missing size corressponds to the grocery stores. Hence, we will suppose that all grocery stores are small         sized.
+        - The remaining outlets with missing size corresspond are OUT007 and OUT045. Both of them are Supermarkets of Type 1 located in Tier2. The only outlet with same characteristics is OUT035, which is a small sized outlet and have a greater average sales than the             former two. Hence, we will assume that OUT007 and OUT045 are small sized.   
 
 ## Results
 
