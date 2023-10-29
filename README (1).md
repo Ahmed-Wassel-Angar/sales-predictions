@@ -9,7 +9,7 @@ The goal of this project is to help the retailor understand the properties of pr
 
 
 ### Data:
-![Data Source]([project1_sample_image.png](https://drive.google.com/file/d/1pjfwuYRLDsei9Z8gYFtHhi-pEKxp8DAA/view?usp=sharing)
+[Data Source](https://drive.google.com/file/d/1pjfwuYRLDsei9Z8gYFtHhi-pEKxp8DAA/view?usp=sharing)
 
 Data can include source and high-level description (e.g. # obs)
 
