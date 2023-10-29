@@ -30,8 +30,17 @@ Item_Outlet_Sales           | Sales of the product in the particular store. This
 ---
 
 
-## Methods
-- Data preparation steps with explanation and justification for choices
+## Exploratery Data Analysis
+1. First of all, we will use a custom function called explore(dataframe,data_dictionary) that will:
+    - extract the features' datatypes from the data dictionary and address every data type within our dataset. Using a Try and Except, the       function will address every feature's datatype and throws a warning message if the column did not change its type successfully,
+    - diplay a missingso graph to evalute missing values,
+    - display a numerical desciption for each feature (min, max, mean, 25% quantile, 75% Quantile, standard deviation and the count). We         will use these ao assess any inconsistency within our numerical features,
+    - Display the name of each feature:
+        - its nature (numerical or categorical), the count of missing values as well as its percentage,
+        - its cardinality and the corresponding percentage,
+        - The unique values within each categorical feature, the count of each unique value and its percentgae to check the feature's                consistancy.
+        - the most common value and its number of occurences as well as a warning message if the corresponding feature is constant or                quasi-constant (>=98% of occurences for the most common value),
+        
 - 
 
 ## Results
