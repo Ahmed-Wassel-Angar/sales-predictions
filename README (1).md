@@ -1,14 +1,15 @@
-# sales prediction for food items sold at various stores
-## Subtitle describing the analysis 
+# Sales Predictions
+## Analysis and predictions for food items sold at various stores 
 
 **Author**: Ahmed Wassel Angar 
 
 ### Business problem:
 
-Here is where you state the business problem you were trying to solve
+The goal of this project is to help the retailor understand the properties of products and outlets that play crucial roles in increasing sales.
 
 
 ### Data:
+https://drive.google.com/file/d/1pjfwuYRLDsei9Z8gYFtHhi-pEKxp8DAA/view?usp=sharing
 Data can include source and high-level description (e.g. # obs)
 
 
