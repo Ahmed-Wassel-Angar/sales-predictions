@@ -32,6 +32,7 @@ Item_Outlet_Sales           | Sales of the product in the particular store. This
 
 ## Exploratery Data Analysis
 *Note: We will use a copy of df in our analysis. The original dataset will remain almost as it is for mdeling use afterwards.*
+*Note: We did use custom functions (explore_structure(), explore_numeric_feature(), explore_categorical_feature(), plot_numeric() and plot_categorical()) to explore the dataset numerically and visually (univariate and multivariate visualizations).*
 - First of all, we will use a custom function called explore(dataframe,data_dictionary) that will:
     - extract the features' datatypes from the data dictionary and address every data type within our dataset. Using a Try and Except, the       function will address every feature's datatype and throws a warning message if the column did not change its type successfully,
     - Check for duplicated row and drop them if found. A message with the number of deleted rows will be displayed for the user.
