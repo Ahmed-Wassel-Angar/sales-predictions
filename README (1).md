@@ -31,23 +31,30 @@ Item_Outlet_Sales           | Sales of the product in the particular store. This
 
 
 ## Exploratery Data Analysis
+*Note: We will use a copy of df in our analysis. The original dataset will remain almost as it is for mdeling use afterwards.*
 - First of all, we will use a custom function called explore(dataframe,data_dictionary) that will:
     - extract the features' datatypes from the data dictionary and address every data type within our dataset. Using a Try and Except, the       function will address every feature's datatype and throws a warning message if the column did not change its type successfully,
     - Check for duplicated row and drop them if found. A message with the number of deleted rows will be displayed for the user.
-    - diplay a missingso graph to evalute missing values,
+    - diplay a missingso graph to evalute missing values: rows with missing values from each feature that count for less than the threshold (% of the entire dataset lenght) will be automatically dropped. A message will signal this to the user. The default value of the threshold is 0%.
+    - Check for rows that have missing values across all features. These rows (obsolete) will be deleted. A message with the number of deleted rows will be displayed for the user,
     - display a numerical desciption for each feature (min, max, mean, 25% quantile, 75% Quantile, standard deviation and the count). We         will use these ao assess any inconsistency within our numerical features,
     - Display the name of each feature:
         - its nature (numerical or categorical), the count of missing values as well as its percentage,
         - its cardinality and the corresponding percentage,
         - The unique values within each categorical feature, the count of each unique value and its percentgae to check the feature's                consistancy.
         - the most common value and its number of occurences as well as a warning message if the corresponding feature is constant or                quasi-constant (>=98% of occurences for the most common value),
-- Results :
+- Obsevations :
     - All features changed their types succefully,
+    - Item_Identifier have a very high cardinality and is not a unique identifier of a row. **We will drop this column** from our model later on.
     - There are no duplicated rows,
+    - No rows has been dropped relatively to a threshold of 2%,
     - There is no inconsistencey within the numerical features,
     - Two features have missing values, which are "Item_Weight" and "Outlet_Size":
-        - Part of the outlets with missing size corressponds to the grocery stores. Hence, we will suppose that all grocery stores are small sized.
-        - The remaining outlets with missing size corresspond are OUT007 and OUT045. Both of them are Supermarkets of Type 1 located in Tier2. The only outlet with same characteristics is OUT035, which is a small sized outlet and have a greater average sales than the former two. Hence, we will assume that OUT007 and OUT045 are small sized.   
+        - Part of the outlets with missing size corresspond to the grocery stores. Hence, we will suppose that all grocery stores are small sized.
+        - The remaining outlets with missing size corresspond are OUT007 and OUT045. Both of them are Supermarkets of Type 1 located in Tier2. The only outlet with same characteristics is OUT035, which is a small sized outlet and have a greater average sales than the former two. Hence, we will assume that OUT007 and OUT045 are small sized.
+        - For "Item_Weight"'s missing values, we will impute the missing values by the average weights of the corresponding "Item_Type" subset.
+      - The "Item_Weight" feature is equally distributed and has a correlation of almost 0 (corr = 0.01) with our target "Item_Outlet_Sales". Plus from a business point of view it is unlikely that it affects our target. => Hence, **we will drop it**.
+      - The "Outlet_Establishment_Year" feature seems to have no influence on the target which is almost constant across all years (except of two) and a correlation of almost 0 (corr = -0.05). Plus, from a business point of view, the stackeholders can not affect or change the Outlet Establishment Year. => Hence, **We will drop it**.
 
 ## Results
 
