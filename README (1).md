@@ -50,7 +50,10 @@ Item_Outlet_Sales           | Sales of the product in the particular store. This
     - Item_Identifier have a very high cardinality and is not a unique identifier of a row. **We will drop this column** from our model later on.
     - There are no duplicated rows,
     - No rows has been dropped relatively to a threshold of 2%,
-    - There is no inconsistencey within the numerical features,
+    - The only iconsistencey spotted is null values within feature `Item_Visibility`:
+      - In fact, one can clearly observe that there are Items with 0 visibility and 0 sales. These Items should be investigeted; if they are obsolete *i.e* no longer proposed to customers, **then they should be droped(no observations found in this subset).**(no observations found in this subset)
+      - Others are being sold with visibilities equal to 0 (526 items). These should be treated as missing values of the `Item_Visibility` feature within our model, **thus replaced with NaNs, which was done.**
+        ![Item_Visibility exploration](plot_numeric_Item_Visibility.JPG)
     - Two features have missing values, which are "Item_Weight" and "Outlet_Size":
         - Part of the outlets with missing size corresspond to the grocery stores. Hence, we will suppose that all grocery stores are small sized.
         - The remaining outlets with missing size corresspond are OUT007 and OUT045. Both of them are Supermarkets of Type 1 located in Tier2. The only outlet with same characteristics is OUT035, which is a small sized outlet and have a greater average sales than the former two. Hence, we will assume that OUT007 and OUT045 are small sized.
