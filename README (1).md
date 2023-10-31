@@ -58,7 +58,8 @@ Item_Outlet_Sales           | Sales of the product in the particular store. This
     - The "Item_Weight" feature is equally distributed and has a correlation of almost 0 (corr = 0.01) with our target "Item_Outlet_Sales". Plus from a business point of view it is unlikely that it affects our target. => Therefor, **we will drop it**.
       ![Item_Weight exploration](explore_numeric_Item_Weight.JPG)
       ![Item_Weight exploration](plot_numeric_Item_Weight.JPG)
-    - The "Outlet_Establishment_Year" feature seems to have no influence on the target which is almost constant across all years (except of two) and a correlation of almost 0 (corr = -0.05). Plus, from a business point of view, the stackeholders can not affect or change the Outlet Establishment Year. => Therefor, **We will drop it**. 
+    - The "Outlet_Establishment_Year" feature seems to have no influence on the target which is almost constant across all years (except of two) and a correlation of almost 0 (corr = -0.05). Plus, from a business point of view, the stackeholders can not affect or change the Outlet Establishment Year. => Therefor, **We will drop it**.
+    - The `Item_MRP` has an interesting distribution, that is oscilating around intervals of MRPs. this behaviour is most clear in the `regplot` of `Item_MRP` *vs* our target `Item_Outlet_Sales`. We distinguish 4 clearly separated bins of Items depending on different MRPs. The sales per Item per Outlet also tend to increase with the increase of the MRP.
   
 
 ## Results
