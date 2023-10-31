@@ -56,7 +56,8 @@ Item_Outlet_Sales           | Sales of the product in the particular store. This
         - The remaining outlets with missing size corresspond are OUT007 and OUT045. Both of them are Supermarkets of Type 1 located in Tier2. The only outlet with same characteristics is OUT035, which is a small sized outlet and have a greater average sales than the former two. Hence, we will assume that OUT007 and OUT045 are small sized.
         - For "Item_Weight"'s missing values, we will impute the missing values by the average weights of the corresponding "Item_Type" subset.
     - The "Item_Weight" feature is equally distributed and has a correlation of almost 0 (corr = 0.01) with our target "Item_Outlet_Sales". Plus from a business point of view it is unlikely that it affects our target. => Hence, **we will drop it**.
-      ![sample image](project1_sample_image.png)
+      ![Item_Weight exploration](explore_numeric_Item_Weight.JPG)
+      ![Item_Weight exploration](plot_numeric_Item_Weight.JPG)
     - The "Outlet_Establishment_Year" feature seems to have no influence on the target which is almost constant across all years (except of two) and a correlation of almost 0 (corr = -0.05). Plus, from a business point of view, the stackeholders can not affect or change the Outlet Establishment Year. => Hence, **We will drop it**. 
   
 
